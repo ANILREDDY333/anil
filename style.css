@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.outer_grid{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 90px 1fr;
+    height:100vh ;
+    
+    
+}
+header .data{
+    justify-self: center;
+    align-self: center;
+   
+}
+
+
+
+nav{
+    background-color: red;
+    grid-area: alias-nav;
+    height:50px;
+    width:50px;
+    display: none;
+}
+header{
+    background-color:aliceblue
+    grid-area:alias-h1;
+    display: flex;
+    justify-content:space-between;
+    
+    font-family: "Sonsie One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    line-height: 5em;
+    
+}
+.inner_grid{
+    background-color:cadetblue;
+    grid-area: alias-inner-grid;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start:2;
+    grid-row-end: 4;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:50px;
+    padding-top: 30px;
+    padding-left: 30px;
+    background-image: url("./pexels-asad-photo-maldives-1449773.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
+   
+
+}
+.label{
+    list-style: none;
+    display: flex;
+    animation-name:flip;
+}
+.hi{
+    justify-content: space-between;
+}
+.label:hover{
+    background-color: aquamarine;
+    border-radius:20%;
+    width: 70px;
+    
+    
+    
+}
+.bounce{
+    animation-name: bounce;
+}
+.image:hover{
+    background-color: #ff1493;
+    transform: scale(1.1,1.1);
+}
+.outer_grid img{
+    color: black;
+}
+.inner_grid  h1{
+   grid-column: span 2;
+   justify-content: center;
+   align-content: center;
+   color: aliceblue;
+
+    
+}
+.inner_grid h2{
+    grid-column-start: 3 ;
+    grid-column: span 1;
+    color: azure;
+    
+}
+   
